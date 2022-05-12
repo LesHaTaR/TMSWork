@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "b4f0f19e-6cbf-475c-8827-20c1571cd78f",
+		"name": "TD_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Q_0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/list",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_owner",
+							"value": "zxc@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "Дельфин",
+							"type": "text"
+						},
+						{
+							"key": "company_type",
+							"value": "ОАО",
+							"type": "text"
+						},
+						{
+							"key": "company_users",
+							"value": "zxc(zxc@mail.com)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createcompany",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createcompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task_title",
+							"value": "поход к дельфинам",
+							"type": "text"
+						},
+						{
+							"key": "task_description",
+							"value": "знакомство с дельфинами",
+							"type": "text"
+						},
+						{
+							"key": "email_owner",
+							"value": "zxc@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "email_assign",
+							"value": "zxc@mail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createtask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createtask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q_3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_owner",
+							"value": "zxc@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "email_assign",
+							"value": "zxc@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "id_task",
+							"value": "146",
+							"type": "text"
+						},
+						{
+							"key": "task_title",
+							"value": "поход к дельфинам",
+							"type": "text"
+						},
+						{
+							"key": "task_description",
+							"value": "знакомство с дельфинами, купание с дельфинами",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/updatetask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"updatetask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q_4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email_owner",
+							"value": "zxc@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "task_id",
+							"value": "146",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/deletetask",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"deletetask"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
