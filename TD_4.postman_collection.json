@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b4f0f19e-6cbf-475c-8827-20c1571cd78f",
+		"_postman_id": "e8b83596-2042-4780-818a-2a9bac189f10",
 		"name": "TD_4",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -40,29 +40,13 @@
 				"method": "POST",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "email_owner",
-							"value": "zxc@mail.com",
-							"type": "text"
-						},
-						{
-							"key": "company_name",
-							"value": "Дельфин",
-							"type": "text"
-						},
-						{
-							"key": "company_type",
-							"value": "ОАО",
-							"type": "text"
-						},
-						{
-							"key": "company_users",
-							"value": "zxc(zxc@mail.com)",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\r\n    \"email_owner\": \"manager@mail.ru\",\r\n    \"company_name\": \"Дельфин\",\r\n    \"company_type\": \"ОАО\",\r\n    \"company_users\": [\"manager@mail.ru\",\"qaws123@mail.com\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "http://users.bugred.ru/tasks/rest/createcompany",
